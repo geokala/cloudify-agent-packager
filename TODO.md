@@ -1,4 +1,61 @@
+- agent_packager/packager.py:49:    #  TODO: (IMPRV) only raise exceptions in verbose mode
+- agent_packager/packager.py:105:    #  TODO: find a workaround for strip-components using tarfile
+- agent_packager/packager.py:106:    #  TODO: check if tar before untaring
 - agent_packager/logger.py:60:    #  TODO: (IMPRV) only perform file related actions if file handler is
 - agent_packager/logger.py:61:    #  TODO: (IMPRV) defined.
-- agent_packager/packager.py:42:    #  TODO: (IMPRV) only raise exceptions in verbose mode
-- agent_packager/packager.py:143:    #  TODO: find a workaround for strip-components using tarfile
+- agent_packager/utils.py:73:    #  TODO: solve or depracate..
+- agent_packager/utils.py:74:    #  TODO: apparently, it will tar the first child dir of
+- agent_packager/utils.py:75:    #  TODO: source, and not the given parent.
+- lib/python2.7/site-packages/diamond/metric.py:93:    #  TODO: get precision from value string
+- lib/python2.7/site-packages/configobj.py:38:    #  TODO: the list of aliases is not meant to be exhaustive, is there a
+- lib/python2.7/site-packages/configobj.py:963:    #  TODO: Why do we raise a KeyError here?
+- lib/python2.7/site-packages/configobj.py:1210:    #  TODO: check the values too.
+- lib/python2.7/site-packages/configobj.py:1415:    #  TODO: if encoding is just UTF16 - we ought to check for both
+- lib/python2.7/site-packages/configobj.py:1416:    #  TODO: big endian and little endian versions.
+- lib/python2.7/site-packages/configobj.py:1529:    #  TODO: this may need to be modified
+- lib/python2.7/site-packages/setuptools/command/easy_install.py:968:        extras = '' # TODO: self.report_extras(req, dist)
+- lib/python2.7/site-packages/pip/_vendor/distlib/locators.py:833:    #  TODO SHA256 digest
+- lib/python2.7/site-packages/pip/_vendor/distlib/util.py:232:    #  TODO check k, v for valid values
+- lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py:245:    #  TODO document the mapping API and UNKNOWN default key
+- lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py:599:    #  TODO could add iter* variants
+- lib/python2.7/site-packages/pip/_vendor/distlib/metadata.py:976:    #  TODO: other fields such as contacts
+- lib/python2.7/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py:225:    #  TODO: Add namespace support here
+- lib/python2.7/site-packages/pip/_vendor/requests/packages/charade/charsetprober.py:61:    #  TODO
+- lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connectionpool.py:371:    #  TODO: Add optional support for socket.gethostbyname checking.
+- lib/python2.7/site-packages/pip/_vendor/requests/packages/urllib3/connection.py:84:    #  TODO: Fix tunnel so it doesn't depend on self.sock state.
+- lib/python2.7/site-packages/pip/_vendor/requests/packages/chardet/charsetprober.py:61:    #  TODO
+- lib/python2.7/site-packages/pip/_vendor/requests/hooks.py:26:    #  TODO: response is the only one
+- lib/python2.7/site-packages/pip/cmdoptions.py:186:    #  TODO: Remove after 1.6
+- lib/python2.7/site-packages/pip/cmdoptions.py:194:    #  TODO: Remove after 1.6
+- lib/python2.7/site-packages/pip/wheel.py:373:    #  TODO: this goes somewhere besides the wheel module
+- lib/python2.7/site-packages/pip/wheel.py:445:    #  TODO: maybe move the install code into this class
+- lib/python2.7/site-packages/pip/req.py:304:    #  TODO: take this out later
+- lib/python2.7/site-packages/pip/req.py:804:    #  TODO: remove this later
+- lib/python2.7/site-packages/pip/req.py:1390:    #  TODO: take this out later
+- lib/python2.7/site-packages/pip/req.py:1412:    #  TODO: remove this later
+- lib/python2.7/site-packages/cloudify/manager.py:248:    #  TODO: some nasty code duplication between these two methods
+- lib/python2.7/site-packages/cloudify/decorators.py:332:    #  TODO: kill worker externally
+- lib/python2.7/site-packages/cloudify/endpoint.py:208:    #  TODO
+- lib/python2.7/site-packages/cloudify/endpoint.py:212:    #  TODO
+- lib/python2.7/site-packages/cloudify/logs.py:136:    #  TODO: somehow inject logging level (no one currently passes
+- lib/python2.7/site-packages/agent_packager/packager.py:48:    #  TODO: (IMPRV) only raise exceptions in verbose mode
+- lib/python2.7/site-packages/agent_packager/packager.py:104:    #  TODO: find a workaround for strip-components using tarfile
+- lib/python2.7/site-packages/agent_packager/packager.py:105:    #  TODO: check if tar before untaring
+- lib/python2.7/site-packages/agent_packager/logger.py:60:    #  TODO: (IMPRV) only perform file related actions if file handler is
+- lib/python2.7/site-packages/agent_packager/logger.py:61:    #  TODO: (IMPRV) defined.
+- lib/python2.7/site-packages/agent_packager/utils.py:73:    #  TODO: solve or depracate..
+- lib/python2.7/site-packages/agent_packager/utils.py:74:    #  TODO: apparently, it will tar the first child dir of
+- lib/python2.7/site-packages/agent_packager/utils.py:75:    #  TODO: source, and not the given parent.
+- lib/python2.7/site-packages/yaml/scanner.py:184:    #  TODO: support for BOM within a stream.
+- lib/python2.7/site-packages/yaml/scanner.py:762:    #  TODO: We need to make tab handling rules more sane. A good rule is
+- lib/python2.7/site-packages/requests/packages/urllib3/connectionpool.py:389:    #  TODO: Add optional support for socket.gethostbyname checking.
+- lib/python2.7/site-packages/requests/packages/urllib3/util/retry.py:129:        self._observed_errors = _observed_errors # TODO: use .history instead?
+- lib/python2.7/site-packages/requests/packages/urllib3/connection.py:140:    #  TODO: Fix tunnel so it doesn't depend on self.sock state.
+- lib/python2.7/site-packages/requests/packages/chardet/charsetprober.py:61:    #  TODO
+- lib/python2.7/site-packages/requests/hooks.py:26:    #  TODO: response is the only one
+- lib/python2.7/site-packages/virtualenv.py:2340:    # # TODO:
+- share/diamond/collectors/memory/memory.py:96:    #  TODO: We only support one unit node here. Fix it!
+- share/diamond/collectors/memory/memory.py:129:    #  TODO: We only support one unit node here. Fix it!
+- share/diamond/collectors/memory_cgroup/memory_cgroup.py:112:    #  TODO: We only support one unit node here. Fix it!
+- share/diamond/collectors/snmp/snmp.py:130:    #  TODO: Error check
+- share/diamond/collectors/snmp/snmp.py:166:    #  TODO: Error Check
