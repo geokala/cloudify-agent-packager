@@ -19,13 +19,13 @@ EXTERNAL_MODULES = [
 ]
 
 BASE_MODULES = {
-    'plugins_common': 'https://github.com/cloudify-cosmo/cloudify-rest-client/archive/master.tar.gz',  # NOQA
-    'rest_client': 'https://github.com/cloudify-cosmo/cloudify-plugins-common/archive/master.tar.gz',  # NOQA
-    'script_plugin': 'https://github.com/cloudify-cosmo/cloudify-script-plugin/archive/master.tar.gz',  # NOQA
-    'diamond_plugin': 'https://github.com/cloudify-cosmo/cloudify-diamond-plugin/archive/master.tar.gz'  # NOQA
+    'plugins_common': 'https://github.com/cloudify-cosmo/cloudify-rest-client/archive/ipv6mods3.2ga.tar.gz',  # NOQA
+    "rest_client": "git+git://github.com/cloudify-cosmo/cloudify-rest-client.git@3.2",  # NOQA
+    "script_plugin": "git+git://github.com/cloudify-cosmo/cloudify-script-plugin.git@1.2",  # NOQA
+    'diamond_plugin': 'git+git://github.com/cloudify-cosmo/cloudify-diamond-plugin@1.2'  # NOQA
 }
 
-MANAGER_REPO_URL = 'https://github.com/cloudify-cosmo/cloudify-manager/archive/{0}.tar.gz'  # NOQA
+MANAGER_REPO_URL = 'https://github.com/geokala/cloudify-manager/archive/{0}.tar.gz'  # NOQA
 
 MANAGEMENT_MODULES = {
     'agent_installer': 'plugins/agent-installer',
@@ -215,7 +215,7 @@ def create(config=None, config_file=None, force=False, verbose=True):
 
     # install management
     lgr.debug('retrieiving management modules code...')
-    version = config.get('management_modules_version', 'master')
+    version = config.get('management_modules_version', 'ipv6mods3.2ga')
     manager_tmp_dir = _get_manager(MANAGER_REPO_URL.format(version), venv)
 
     lgr.info('installing management modules...')
