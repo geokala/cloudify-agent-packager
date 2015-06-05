@@ -3,10 +3,10 @@ release: trusty
 venv: 'cloudify/test_venv/env'
 python_path: '/usr/bin/python'
 base_modules:
-    plugins_common: https://github.com/cloudify-cosmo/cloudify-plugins-common/archive/3.1rc1.tar.gz
-    rest_client: https://github.com/cloudify-cosmo/cloudify-rest-client/archive/3.1rc1.tar.gz
-    script_plugin: https://github.com/cloudify-cosmo/cloudify-script-plugin/archive/1.1rc1.tar.gz
-    diamond_plugin: https://github.com/cloudify-cosmo/cloudify-diamond-plugin/archive/1.1rc1.tar.gz
-management_modules_version: 3.1rc1
+    plugins_common: https://github.com/geokala/cloudify-plugins-common/archive/ipv6mods3.2ga.tar.gz
+    rest_client: https://github.com/cloudify-cosmo/cloudify-rest-client/archive/3.2.tar.gz
+    script_plugin: https://github.com/cloudify-cosmo/cloudify-script-plugin/archive/1.2.tar.gz
+    diamond_plugin: https://github.com/cloudify-cosmo/cloudify-diamond-plugin/archive/1.2.tar.gz
+management_modules_version: ipv6mods3.2ga
 output_tar: Ubuntu-trusty-agent.tar.gz
 keep_venv: false
